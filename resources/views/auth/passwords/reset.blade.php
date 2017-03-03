@@ -26,6 +26,7 @@
             <p class="login-box-msg">Reset Password</p>
 
             <form action="{{ url('/password/reset') }}" method="post">
+                <input type="hidden" name="token" value="{{ $token }}">
                 <div class="form-group has-feedback">
                     <input type="email" class="form-control" name="email" placeholder="Email">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
