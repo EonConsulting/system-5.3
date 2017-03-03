@@ -166,8 +166,12 @@ return [
         /*
          * Package Service Providers...
          */
-
-        //
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
+        Spatie\Fractal\FractalServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Creativeorange\Gravatar\GravatarServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -224,6 +228,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Fractal' => Spatie\Fractal\FractalFacade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
