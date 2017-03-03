@@ -14,7 +14,8 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('todo', require('./components/ToDo.vue'));
 
 const app = new Vue({
-    el: 'body'
+    el: '#app'
 });

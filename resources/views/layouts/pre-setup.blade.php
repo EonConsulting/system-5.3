@@ -30,7 +30,7 @@
     @yield('custom-styles')
 </head>
 <body class="hold-transition skin-blue-light sidebar-mini @yield('body-class')">
-<div class="wrapper">
+<div class="wrapper" id="app">
 
     <header class="main-header">
 
@@ -318,6 +318,7 @@
 
 <!-- jQuery 2.2.3 -->
 <script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="/js/app.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <!-- FastClick -->
